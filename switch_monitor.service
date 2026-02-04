@@ -1,0 +1,10 @@
+[Unit]
+Description=Switch Backup Monitor
+After=default.target
+
+[Service]
+ExecStart=/home/pi/switch_monitor.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
